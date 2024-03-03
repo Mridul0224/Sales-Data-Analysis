@@ -41,7 +41,7 @@ SELECT * FROM sales.transactions WHERE amount < 0;
 SELECT SUM(sales_amount) FROM sales.transactions
 JOIN sales.date ON transactions.order_date = date.date
 WHERE year = 2020 AND market_code = 'Mark001';
-
+```
 
 ## Data Cleaning and ETL (Extract, Transform, Load)
 This stage focuses on preparing the data for analysis, connecting MySQL databases to Power BI, importing data, and utilizing Power Query for data cleaning. Steps include filtering out inconsistencies, removing duplicates, and currency conversion to ensure data integrity.
